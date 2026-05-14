@@ -1,0 +1,113 @@
+:root {
+    --dark-green: rgb(1, 42, 32);
+    --light-green: rgb(242, 255, 244);
+    --green: rgb(0, 161, 148);
+    --red: rgb(236, 61, 8);
+    --white: rgb(249, 255, 252);
+    --gray: rgb(129, 151, 150);
+}
+
+html {
+    background-color: var(--light-green);
+    font-family: Roboto;
+}
+
+.phonePage {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 36pt;
+    color: var(--green);
+}
+
+p {
+    margin-bottom: 50px;
+    font-size: 17pt;
+    color: var(--dark-green);
+}
+
+.error {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 13pt;
+    color: var(--red);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-top: 35px;
+    font-size: 15pt;
+    padding: 10px;
+    border-radius: 8px;
+    border: 3px solid var(--green);
+    background-color: var(--white);
+    color: var(--dark-green);
+}
+
+input::placeholder {
+    color: var(--gray);
+}
+
+.enter-button {
+    margin: 0px 30px;
+    margin-top: 60px;
+    font-size: 17pt;
+    padding: 17px;
+    border: 0px solid var(--green);
+    border-radius: 15px;
+    background-color: var(--green);
+    color: var(--white);
+    transition: transform 0.2s ease;
+}
+
+.enter-button:hover {
+    background-color: var(--dark-green);
+    transform: scale(0.95);
+    
+}
+
+.enter-button:active {
+    transform: scale(0.9);
+}
+
+.enter-button:disabled {
+    transform: scale(0.9);
+    background-color: var(--dark-green);
+}
+
+.resend-code {
+    background-color: transparent;
+    border: 0px;
+    color: var(--dark-green);
+    font-size: 13pt;
+    margin-top: 25px;
+    transition: transform 0.3s ease;
+}
+
+.resend-code:disabled {
+    color: var(--gray);
+    font-size: 12pt;
+}
+
+.resend-code:enabled:hover {
+    transform: scale(1.05);
+}
+
+.resend-code:enabled:active {
+    text-shadow: 0.1px 0.1px 0px var(--dark-green), -0.1px -0.1px 0px var(--dark-green);
+}
